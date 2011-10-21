@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        <script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+        <script type="text/javascript" src="jquery.border-tabs.js"></script>
+        <style type="text/css">
+            #testdiv{
+                position: absolute;
+                top: 150px;
+                left: 250px;
+                width: 300px;
+                height: 150px;
+                background-color: blue;
+                border: black solid thin;
+            }
+
+            .border-tab-content{
+                background-color: green;
+            }
+            .border-tab-tab{
+                height: 25px;
+                width: 75px;
+                background-color: blue;
+                color:white;
+                text-align: center;
+                padding-top: 5px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="testdiv"></div>
+        <div id="tab1">
+            <h1>tab</h1>
+            some content
+        </div>
+        <div id="tab2">
+            <h1>tab 2</h1>
+            some content
+        </div>
+        <script type="text/javascript">
+            $("#tab1").borderTab({
+                border: 'testdiv',
+                left: 20
+            });
+            $("#tab2").borderTab({
+                border: 'testdiv',
+                left: 100
+            });
+        </script>
+    </body>
+</html>
