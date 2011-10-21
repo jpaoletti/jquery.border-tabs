@@ -45,5 +45,4 @@ jQuery.fn.borderTab = function(params){
         }
     });
     self.show();
-    border.css('background-color','red');
 }
